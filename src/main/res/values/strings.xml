@@ -6,4 +6,5 @@
     <string name="login_email_input_text_view">EMAIL</string>
     <string name="login_password_input_text_view">PASSWORD</string>
     <string name="forgot_password_text_view">forgot password</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>
