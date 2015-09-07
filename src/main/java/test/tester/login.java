@@ -1,15 +1,12 @@
 package test.tester;
 
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.os.Bundle;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBar.Tab;
-import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
-
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class login extends AppCompatActivity {
 
@@ -40,4 +37,5 @@ public class login extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }
