@@ -1,38 +1,22 @@
 package test.tester;
 
-import android.app.TabActivity;
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TabHost;
 
-public class MainActivity extends TabActivity {
+public class Activities extends AppCompatActivity {
 
-    TabHost tabHost;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        tabHost = getTabHost();
-
-        TabHost.TabSpec tabspec1 = tabHost.newTabSpec("page1");
-        tabspec1.setIndicator("Explore");
-        tabspec1.setContent(new Intent(this, Explore.class));
-        tabHost.addTab(tabspec1);
-
-        TabHost.TabSpec tabspec2 = tabHost.newTabSpec("page2");
-        tabspec2.setIndicator("Activities");
-        tabspec2.setContent(new Intent(this, Activities.class));
-        tabHost.addTab(tabspec1);
+        setContentView(R.layout.activity_activities);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_activities, menu);
         return true;
     }
 

@@ -7,4 +7,6 @@
     <string name="login_password_input_text_view">PASSWORD</string>
     <string name="forgot_password_text_view">forgot password</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_explore">Explore</string>
+    <string name="title_activity_activities">Activities</string>
 </resources>
