@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TabHost;
 
+
 public class MainActivity extends TabActivity {
 
     TabHost tabHost;
@@ -42,6 +43,8 @@ public class MainActivity extends TabActivity {
         tabspec5.setIndicator("Profile");
         tabspec5.setContent(new Intent(this, Profile.class));
         tabHost.addTab(tabspec5);
+
+
     }
 
     @Override
@@ -65,4 +68,6 @@ public class MainActivity extends TabActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }
