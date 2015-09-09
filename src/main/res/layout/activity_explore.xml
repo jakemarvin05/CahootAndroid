@@ -9,75 +9,89 @@
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:id="@+id/korea_thumbnail"
-        android:layout_alignParentBottom="true"
+        android:src="@drawable/korea"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/japan_thumbnail"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/korea"
-        android:layout_marginBottom="15dp"
-        android:layout_marginRight="10dp"
-        android:scaleType="fitXY"
-        android:layout_toLeftOf="@+id/germany_thumbnail" />
+        android:maxHeight="180dp"
+        android:maxWidth="180dp"
+        android:minHeight="180dp"
+        android:minWidth="180dp" />
 
     <ImageView
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:id="@+id/germany_thumbnail"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="false"
         android:src="@drawable/germany"
-        android:layout_marginBottom="15dp"
-        android:layout_marginLeft="8dp"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY"
+        android:layout_below="@+id/thainland_thumbnail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:maxHeight="180dp"
+        android:maxWidth="180dp"
+        android:minHeight="180dp"
+        android:minWidth="180dp" />
 
     <ImageView
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:id="@+id/japan_thumbnail"
-        android:layout_above="@+id/korea_thumbnail"
+        android:src="@drawable/japan"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/america_thumbnail"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/japan"
         android:layout_marginBottom="15dp"
-        android:layout_marginRight="10dp"
-        android:scaleType="fitXY"
-        android:layout_toLeftOf="@+id/thainland_thumbnail" />
+        android:maxHeight="180dp"
+        android:maxWidth="180dp"
+        android:minHeight="180dp"
+        android:minWidth="180dp" />
 
     <ImageView
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:id="@+id/thainland_thumbnail"
-        android:layout_above="@+id/germany_thumbnail"
+        android:src="@drawable/thailand"
+        android:layout_below="@+id/france_thumbnail"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:src="@drawable/thailand"
         android:layout_marginBottom="15dp"
-        android:layout_marginLeft="8dp"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY"
+        android:maxHeight="180dp"
+        android:maxWidth="180dp"
+        android:minHeight="180dp"
+        android:minWidth="180dp" />
 
     <ImageView
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:id="@+id/america_thumbnail"
-        android:layout_above="@+id/japan_thumbnail"
+        android:src="@drawable/america"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/america"
         android:layout_marginBottom="15dp"
-        android:layout_marginRight="10dp"
-        android:scaleType="fitXY"
-        android:layout_toLeftOf="@+id/france_thumbnail" />
+        android:maxHeight="180dp"
+        android:maxWidth="180dp"
+        android:minHeight="180dp"
+        android:minWidth="180dp" />
 
     <ImageView
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:id="@+id/france_thumbnail"
-        android:layout_above="@+id/thainland_thumbnail"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:src="@drawable/france"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="false"
         android:layout_marginBottom="15dp"
-        android:layout_marginLeft="8dp"
-        android:scaleType="fitXY" />
+        android:layout_alignParentEnd="true"
+        android:maxHeight="180dp"
+        android:maxWidth="180dp"
+        android:minHeight="180dp"
+        android:minWidth="180dp" />
 
 </RelativeLayout>
