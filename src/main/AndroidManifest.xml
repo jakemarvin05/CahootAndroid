@@ -18,27 +18,33 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:label="@string/title_activity_main" >
+            android:label="@string/title_activity_main"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
         </activity>
         <activity
             android:name=".Explore"
-            android:label="@string/title_activity_explore" >
+            android:label="@string/title_activity_explore"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
         </activity>
         <activity
             android:name=".Activities"
-            android:label="@string/title_activity_activities" >
+            android:label="@string/title_activity_activities"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
         </activity>
         <activity
             android:name=".Post"
-            android:label="@string/title_activity_post" >
+            android:label="@string/title_activity_post"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
         </activity>
         <activity
             android:name=".Inbox"
-            android:label="@string/title_activity_inbox" >
+            android:label="@string/title_activity_inbox"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
         </activity>
         <activity
             android:name=".Profile"
-            android:label="@string/title_activity_profile" >
+            android:label="@string/title_activity_profile"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
         </activity>
     </application>
 
