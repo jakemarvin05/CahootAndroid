@@ -17,10 +17,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:icon="@drawable/test_image"
             android:name=".MainActivity"
             android:label="Cahoot"
-            android:theme="@android:style/Theme.Holo.Light">
+            android:theme="@style/Theme.AppCompat.Light">
         </activity>
         <activity
             android:name=".Explore"

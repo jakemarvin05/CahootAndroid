@@ -4,8 +4,11 @@
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 
-    <item android:id="@+id/test"
-        android:icon="@drawable/test_image"
-        android:title="Wan"
-        app:showAsAction="ifRoom" />
+    <item android:id="@+id/inbox_menu"
+        app:showAsAction="always"
+        android:title="Inbox" />
+
+    <item android:id="@+id/profile_menu"
+        app:showAsAction="always"
+        android:title="Profile" />
 </menu>
