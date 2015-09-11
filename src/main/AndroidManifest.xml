@@ -17,34 +17,30 @@
             </intent-filter>
         </activity>
         <activity
+            android:icon="@drawable/test_image"
             android:name=".MainActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+            android:label="Cahoot"
+            android:theme="@android:style/Theme.Holo.Light">
         </activity>
         <activity
             android:name=".Explore"
-            android:label="@string/title_activity_explore"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+            android:label="@string/title_activity_explore">
         </activity>
         <activity
             android:name=".Activities"
-            android:label="@string/title_activity_activities"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+            android:label="@string/title_activity_activities">
         </activity>
         <activity
             android:name=".Post"
-            android:label="@string/title_activity_post"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+            android:label="@string/title_activity_post">
         </activity>
         <activity
             android:name=".Inbox"
-            android:label="@string/title_activity_inbox"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+            android:label="@string/title_activity_inbox">
         </activity>
         <activity
             android:name=".Profile"
-            android:label="@string/title_activity_profile"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+            android:label="@string/title_activity_profile">
         </activity>
     </application>
 
