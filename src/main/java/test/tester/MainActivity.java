@@ -1,45 +1,21 @@
 package test.tester;
 
-import android.app.ActionBar;
-import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.TabHost;
 
 
 public class MainActivity extends ActionBarActivity {
 
 
-    public class tab extends TabActivity {
+
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
-            TabHost tabHost;
-            tabHost = getTabHost();
-
-            TabHost.TabSpec tabspec1 = tabHost.newTabSpec("page1");
-            tabspec1.setIndicator("Explore");
-            tabspec1.setContent(new Intent(this, Explore.class));
-            tabHost.addTab(tabspec1);
-
-            TabHost.TabSpec tabspec2 = tabHost.newTabSpec("page2");
-            tabspec2.setIndicator("Activities");
-            tabspec2.setContent(new Intent(this, Activities.class));
-            tabHost.addTab(tabspec2);
-
-            TabHost.TabSpec tabspec3 = tabHost.newTabSpec("page3");
-            tabspec3.setIndicator("Post");
-            tabspec3.setContent(new Intent(this, Post.class));
-            tabHost.addTab(tabspec3);
-
-            ActionBar actionBar = getActionBar();
-            actionBar.show();
-
 
         }
 
@@ -79,7 +55,4 @@ public class MainActivity extends ActionBarActivity {
 
             return super.onOptionsItemSelected(item);
         }
-
-
-    }
 }

@@ -18,28 +18,31 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:label="Cahoot"
-            android:theme="@style/Theme.AppCompat.Light">
+            android:label="Cahoot">
         </activity>
         <activity
             android:name=".Explore"
-            android:label="@string/title_activity_explore">
+            android:label="@string/title_activity_explore" >
         </activity>
         <activity
             android:name=".Activities"
-            android:label="@string/title_activity_activities">
+            android:label="@string/title_activity_activities" >
         </activity>
         <activity
             android:name=".Post"
-            android:label="@string/title_activity_post">
+            android:label="@string/title_activity_post" >
         </activity>
         <activity
             android:name=".Inbox"
-            android:label="@string/title_activity_inbox">
+            android:label="@string/title_activity_inbox" >
         </activity>
         <activity
             android:name=".Profile"
-            android:label="@string/title_activity_profile">
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name=".Tab"
+            android:label="@string/title_activity_tab" >
         </activity>
     </application>
 
