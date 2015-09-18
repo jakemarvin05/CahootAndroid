@@ -1,6 +1,5 @@
 package test.tester;
 
-import android.app.ActionBar;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -31,9 +30,6 @@ public class Tab extends TabActivity {
         tabspec3.setIndicator("Post");
         tabspec3.setContent(new Intent(this, Post.class));
         tabHost.addTab(tabspec3);
-
-        ActionBar actionBar = getActionBar();
-        actionBar.show();
     }
 
     @Override

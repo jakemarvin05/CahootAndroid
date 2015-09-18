@@ -1,23 +1,36 @@
 package test.tester;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.InflateException;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 
 
 public class MainActivity extends ActionBarActivity {
 
 
 
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+    private static View view;
 
+
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        if (view != null) {
+            ViewGroup parent = (ViewGroup) view.getParent();
+            if (parent != null)
+                parent.removeView(view);
         }
+        try {
+            view = inflater.inflate(R.layout.activity_main, container, false);
+        } catch (InflateException e) {
+        /* map is already there, just return view as it is */
+        }
+        return view;
+    }
 
 
         @Override
@@ -38,20 +51,6 @@ public class MainActivity extends ActionBarActivity {
             int id = item.getItemId();
 
             //noinspection SimplifiableIfStatement
-            if (id == R.id.action_settings) {
-
-                return true;
-            }
-            if (id == R.id.inbox_menu) {
-                Intent i = new Intent(this, Inbox.class);
-                startActivity(i);
-                return true;
-            }
-            if (id == R.id.profile_menu) {
-                Intent i = new Intent(this, Profile.class);
-                startActivity(i);
-                return true;
-            }
 
             return super.onOptionsItemSelected(item);
         }
