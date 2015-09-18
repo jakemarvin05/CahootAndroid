@@ -3,4 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools" tools:context="test.tester.MainActivity">
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/inbox_menu"
+        app:showAsAction="always"
+        android:title="Inbox" />
+
+    <item android:id="@+id/profile_menu"
+        app:showAsAction="always"
+        android:title="Profile" />
 </menu>

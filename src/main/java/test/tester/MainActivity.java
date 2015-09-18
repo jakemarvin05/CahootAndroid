@@ -1,68 +1,57 @@
 package test.tester;
 
-import android.app.TabActivity;
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.view.InflateException;
+import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.TabHost;
+import android.view.View;
+import android.view.ViewGroup;
 
-public class MainActivity extends TabActivity {
 
-    TabHost tabHost;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+public class MainActivity extends ActionBarActivity {
 
-        tabHost = getTabHost();
 
-        TabHost.TabSpec tabspec1 = tabHost.newTabSpec("page1");
-        tabspec1.setIndicator("Explore");
-        tabspec1.setContent(new Intent(this, Explore.class));
-        tabHost.addTab(tabspec1);
 
-        TabHost.TabSpec tabspec2 = tabHost.newTabSpec("page2");
-        tabspec2.setIndicator("Activities");
-        tabspec2.setContent(new Intent(this, Activities.class));
-        tabHost.addTab(tabspec2);
+    private static View view;
 
-        TabHost.TabSpec tabspec3 = tabHost.newTabSpec("page3");
-        tabspec3.setIndicator("Post");
-        tabspec3.setContent(new Intent(this, Post.class));
-        tabHost.addTab(tabspec3);
 
-        TabHost.TabSpec tabspec4 = tabHost.newTabSpec("page4");
-        tabspec4.setIndicator("Inbox");
-        tabspec4.setContent(new Intent(this, Inbox.class));
-        tabHost.addTab(tabspec4);
-
-        TabHost.TabSpec tabspec5 = tabHost.newTabSpec("page5");
-        tabspec5.setIndicator("Profile");
-        tabspec5.setContent(new Intent(this, Profile.class));
-        tabHost.addTab(tabspec5);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        if (view != null) {
+            ViewGroup parent = (ViewGroup) view.getParent();
+            if (parent != null)
+                parent.removeView(view);
+        }
+        try {
+            view = inflater.inflate(R.layout.activity_main, container, false);
+        } catch (InflateException e) {
+        /* map is already there, just return view as it is */
+        }
+        return view;
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        @Override
+        public boolean onCreateOptionsMenu(Menu menu) {
+            // Inflate the menu; this adds items to the action bar if it is present.
+            MenuInflater inflater = getMenuInflater();
+            inflater.inflate(R.menu.menu_main, menu);
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+            return super.onCreateOptionsMenu(menu);
+
         }
 
-        return super.onOptionsItemSelected(item);
-    }
+        @Override
+        public boolean onOptionsItemSelected(MenuItem item) {
+            // Handle action bar item clicks here. The action bar will
+            // automatically handle clicks on the Home/Up button, so long
+            // as you specify a parent activity in AndroidManifest.xml.
+            int id = item.getItemId();
+
+            //noinspection SimplifiableIfStatement
+
+            return super.onOptionsItemSelected(item);
+        }
 }
