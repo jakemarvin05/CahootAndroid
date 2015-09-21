@@ -18,7 +18,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:label="Cahoot">
+            android:label="@string/title_activity_cahoot">
         </activity>
         <activity
             android:name=".Explore"
@@ -39,10 +39,6 @@
         <activity
             android:name=".Profile"
             android:label="@string/title_activity_profile" >
-        </activity>
-        <activity
-            android:name=".Tab"
-            android:label="@string/title_activity_tab" >
         </activity>
     </application>
 

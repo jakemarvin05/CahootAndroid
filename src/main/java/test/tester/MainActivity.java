@@ -2,35 +2,21 @@ package test.tester;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.view.InflateException;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 
 
 public class MainActivity extends ActionBarActivity {
 
 
 
-    private static View view;
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
 
-
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        if (view != null) {
-            ViewGroup parent = (ViewGroup) view.getParent();
-            if (parent != null)
-                parent.removeView(view);
         }
-        try {
-            view = inflater.inflate(R.layout.activity_main, container, false);
-        } catch (InflateException e) {
-        /* map is already there, just return view as it is */
-        }
-        return view;
-    }
 
 
         @Override

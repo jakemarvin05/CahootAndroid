@@ -6,11 +6,21 @@
 
     <fragment
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:name="test.tester.Tab"
+        android:layout_height="match_parent"
+        class="test.tester.Explore"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:id="@+id/tab"></fragment>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ICONS"
+        android:id="@+id/textView2"
+        android:layout_gravity="top|center_horizontal"
+        android:textSize="30dp"
+        android:gravity="center" />
 
 </FrameLayout>
