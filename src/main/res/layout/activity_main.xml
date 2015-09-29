@@ -1,28 +1,14 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:baselineAligned="false"
     android:layout_height="match_parent"
     android:background="@color/background"
     tools:context="test.tester.MainActivity">
 
-    <fragment
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        class="test.tester.Explore"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:id="@+id/tab"
-        android:layout_marginTop="30dp"></fragment>
-
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="ICONS"
-        android:id="@+id/textView2"
-        android:layout_gravity="top|center_horizontal"
-        android:textSize="30dp"
-        android:gravity="center" />
+        android:layout_height="match_parent"
+        android:id="@+id/flContainer">
+    </RelativeLayout>
 
-</FrameLayout>
+</RelativeLayout>
